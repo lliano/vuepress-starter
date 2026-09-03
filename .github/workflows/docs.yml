@@ -19,6 +19,9 @@ jobs:
 
       - name: 设置 pnpm
         uses: pnpm/action-setup@v4
+        with:
+          # 指定 pnpm 的版本，这里使用你本地能正常工作的版本
+          version: 8.15.9
 
       - name: 设置 Node.js
         uses: actions/setup-node@v4
